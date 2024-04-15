@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+        display:flex;
+    }
+    .equal-width{
+        text-align: center;
+        justify-content: center;
+        flex:1;
+        margin: 5px;
+        height: 100px;
+        line-height: 100px;
+        background-color: lightblue;
+        font-weight: bolder;
+    }
+    .row2{
+        display:flex;
+        
+    }
+    .fixed-percentage{
+        flex: 0 40%;
+        text-align: center;
+        background: lightblue;
+        margin:5px;
+        height: 100px;
+        line-height: 100px;
+        font-weight: bolder;
+
+
+    }
+    .flexible{
+    background-color: lightblue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-weight: bolder;
+        
+    }
+</style>
+<body>
+    <hr>
+    <div class="row">
+        <div class="equal-width">Element 1</div>
+        <div class="equal-width">Element 2</div>
+        <div class="equal-width">Element 3</div>
+    </div>
+
+    <div class="row2">
+        <div class="fixed-percentage">Element 4</div>
+        <div class="flexible">Element 5</div>
+
+    </div>
+</body>
+</html>

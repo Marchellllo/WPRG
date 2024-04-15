@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+        border: 2px solid;
+        
+    }
+
+    .column{
+        font-size: larger;
+        background-color:lightblue;
+
+        flex-basis: 400px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+
+        line-height:50px;
+        height: 400px;
+        margin: 20px;
+        
+    }
+
+    .flex-container2{
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        border: 2px solid;
+        
+    }
+
+    .box{
+        height: 70px;
+        line-height: 70px;
+        margin: 0 20px;
+        width: 120px;
+        text-align: center;
+        font-size: larger;
+        background-color: lightblue;        
+    }
+</style>
+<body>
+
+        <div class="flex-container">
+            <div class="column">Kolumna 1</div>
+            <div class="column">Kolumna 2</div>
+            <div class="column">Kolumna 3</div>
+        </div>
+        <hr>
+        <div class="flex-container2">
+            <div class="box">Element 1</div>
+            <div class="box">Element 2</div>
+            <div class="box">Element 3</div>
+
+        </div>
+
+    
+    
+    
+</body>
+</html>
