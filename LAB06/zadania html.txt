@@ -1,0 +1,50 @@
+php zadnaia
+1.
+<?php
+function Pierwsza($liczba){
+	if($liczba <=1){
+    	return false;
+    }
+    if($liczba%2==0){
+    	return false;
+    }
+    for($i=2;$i<=$zakres;$i++){
+    	if($liczba % $i == 0){
+        return false;
+        }
+    
+    
+    }
+    return true;
+}
+
+$zakres = 100;
+
+for($i = 0; $i < $zakres; $i++){
+    if(Pierwsza($i)){
+    echo $i," ";
+    }
+    
+}
+?>
+
+2.
+
+
+<?php
+function Ciagi($pierwszyWyraz, $roznica, $liczbaElementow) {
+    $sumaArytmetyczna = ($liczbaElementow * ($pierwszyWyraz + ($pierwszyWyraz + ($liczbaElementow - 1) * $roznica))) / 2;
+
+echo "Suma ciągu arytmetycznego: " ,$sumaArytmetyczna , "<br>";
+
+	$sumaGeometryczna = $pierwszyWyraz * (1 - pow($roznica, $liczbaElementow)) / (1 - $roznica);
+    
+echo "Suma ciągu geometrycznego: " ,$sumaGeometryczna , "<br>";
+    
+
+}
+Ciagi(5,8,3);
+?>
+
+
+
